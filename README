@@ -1,0 +1,31 @@
+
+
+paramchem.py
+============
+
+
+Install
+-------
+
+Download the cgenff force-field and python script
+
+http://mackerell.umaryland.edu/download.php?filename=CHARMM_ff_params_files/cgenff_charmm2gmx.py
+http://mackerell.umaryland.edu/download.php?filename=CHARMM_ff_params_files/charmm36-jun2015.ff.tgz
+
+
+Usage
+-----
+
+Example use
+
+cd examples/benzene
+
+python paramchem.py -u "YOUR USERNAME" -p "YOUR PASSWORD" -c benzene.pdb 
+# or 
+python paramchem.py -u "YOUR USERNAME" -p "YOUR PASSWORD" -c benzene.mol2
+
+# manually correct the "RESI" line in benzene.str to be 
+# RESI BNZ 0.000 ! param...
+
+python cgenff_charmm2gmx.py BNZ benzene.mol2 benzene.str charmm36-jun2015.ff/
+
