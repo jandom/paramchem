@@ -1,0 +1,214 @@
+; Created by cgenff_charmm2gmx.py
+
+[ moleculetype ]
+; Name            nrexcl
+/scratch/phpMi77We_MQD.pdb              3
+
+[ atoms ]
+;   nr       type  resnr residue  atom   cgnr     charge       mass  typeB    chargeB      massB
+; residue   1 /scratch/phpMi77We_MQD.pdb rtp /scratch/phpMi77We_MQD.pdb q  qsum
+     1      OG311      1 /scratch/phpMi77We_MQD.pdb     O8      1     -0.632     15.999   ;
+     2      OG311      1 /scratch/phpMi77We_MQD.pdb    O10      2     -0.649     15.999   ;
+     3       HGP1      1 /scratch/phpMi77We_MQD.pdb    H20      3      0.420      1.008   ;
+     4       HGP1      1 /scratch/phpMi77We_MQD.pdb    H23      4      0.420      1.008   ;
+     5      CG321      1 /scratch/phpMi77We_MQD.pdb     C9      5      0.045     12.011   ;
+     6       HGA2      1 /scratch/phpMi77We_MQD.pdb    H21      6      0.090      1.008   ;
+     7       HGA2      1 /scratch/phpMi77We_MQD.pdb    H22      7      0.090      1.008   ;
+     8      CG311      1 /scratch/phpMi77We_MQD.pdb     C2      8      0.143     12.011   ;
+     9       HGA1      1 /scratch/phpMi77We_MQD.pdb     H3      9      0.090      1.008   ;
+    10      OG311      1 /scratch/phpMi77We_MQD.pdb     O4     10     -0.651     15.999   ;
+    11       HGP1      1 /scratch/phpMi77We_MQD.pdb    H14     11      0.419      1.008   ;
+    12      CG301      1 /scratch/phpMi77We_MQD.pdb     C6     12      0.224     12.011   ;
+    13      CG331      1 /scratch/phpMi77We_MQD.pdb     C1     13     -0.272     12.011   ;
+    14       HGA3      1 /scratch/phpMi77We_MQD.pdb    H11     14      0.090      1.008   ;
+    15       HGA3      1 /scratch/phpMi77We_MQD.pdb    H12     15      0.090      1.008   ;
+    16       HGA3      1 /scratch/phpMi77We_MQD.pdb    H13     16      0.090      1.008   ;
+    17      CG331      1 /scratch/phpMi77We_MQD.pdb     C7     17     -0.272     12.011   ;
+    18       HGA3      1 /scratch/phpMi77We_MQD.pdb    H17     18      0.090      1.008   ;
+    19       HGA3      1 /scratch/phpMi77We_MQD.pdb    H18     19      0.090      1.008   ;
+    20       HGA3      1 /scratch/phpMi77We_MQD.pdb    H19     20      0.090      1.008   ;
+    21      CG321      1 /scratch/phpMi77We_MQD.pdb     C5     21     -0.185     12.011   ;
+    22       HGA2      1 /scratch/phpMi77We_MQD.pdb    H15     22      0.090      1.008   ;
+    23       HGA2      1 /scratch/phpMi77We_MQD.pdb    H16     23      0.090      1.008   ;
+
+[ bonds ]
+;  ai    aj funct            c0            c1            c2            c3
+    1     3     1
+    1    12     1
+    2     4     1
+    2     5     1
+    5    12     1
+    5     6     1
+    5     7     1
+    8     9     1
+    8    13     1
+    8    21     1
+    8    10     1
+   10    11     1
+   12    17     1
+   12    21     1
+   13    16     1
+   13    14     1
+   13    15     1
+   17    20     1
+   17    18     1
+   17    19     1
+   21    22     1
+   21    23     1
+
+[ pairs ]
+;  ai    aj funct            c0            c1            c2            c3
+    1     2     1
+    1     6     1
+    1     7     1
+    1     8     1
+    1    18     1
+    1    19     1
+    1    20     1
+    1    22     1
+    1    23     1
+    2    17     1
+    2    21     1
+    3    17     1
+    3     5     1
+    3    21     1
+    4    12     1
+    4     6     1
+    4     7     1
+    5     8     1
+    5    18     1
+    5    19     1
+    5    20     1
+    5    22     1
+    5    23     1
+    6    17     1
+    6    21     1
+    7    17     1
+    7    21     1
+    8    17     1
+    9    11     1
+    9    12     1
+    9    14     1
+    9    15     1
+    9    16     1
+    9    22     1
+    9    23     1
+   10    12     1
+   10    14     1
+   10    15     1
+   10    16     1
+   10    22     1
+   10    23     1
+   11    21     1
+   11    13     1
+   12    13     1
+   13    22     1
+   13    23     1
+   14    21     1
+   15    21     1
+   16    21     1
+   17    22     1
+   17    23     1
+   18    21     1
+   19    21     1
+   20    21     1
+
+[ angles ]
+;  ai    aj    ak funct            c0            c1            c2            c3
+    3     1    12    5
+    4     2     5    5
+    2     5    12    5
+    2     5     6    5
+    2     5     7    5
+   12     5     6    5
+   12     5     7    5
+    6     5     7    5
+    9     8    13    5
+    9     8    21    5
+    9     8    10    5
+   13     8    21    5
+   13     8    10    5
+   21     8    10    5
+   11    10     8    5
+   17    12    21    5
+   17    12     5    5
+   17    12     1    5
+   21    12     5    5
+   21    12     1    5
+    5    12     1    5
+   16    13    14    5
+   16    13    15    5
+   16    13     8    5
+   14    13    15    5
+   14    13     8    5
+   15    13     8    5
+   20    17    18    5
+   20    17    19    5
+   20    17    12    5
+   18    17    19    5
+   18    17    12    5
+   19    17    12    5
+   12    21    22    5
+   12    21    23    5
+   12    21     8    5
+   22    21    23    5
+   22    21     8    5
+   23    21     8    5
+
+[ dihedrals ]
+;  ai    aj    ak    al funct            c0            c1            c2            c3            c4            c5
+    3     1    12    17     9
+    3     1    12    21     9
+    3     1    12     5     9
+    4     2     5    12     9
+    4     2     5     6     9
+    4     2     5     7     9
+    2     5    12    17     9
+    2     5    12    21     9
+    2     5    12     1     9
+    6     5    12    17     9
+    6     5    12    21     9
+    6     5    12     1     9
+    7     5    12    17     9
+    7     5    12    21     9
+    7     5    12     1     9
+    9     8    13    16     9
+    9     8    13    14     9
+    9     8    13    15     9
+   21     8    13    16     9
+   21     8    13    14     9
+   21     8    13    15     9
+   10     8    13    16     9
+   10     8    13    14     9
+   10     8    13    15     9
+    9     8    21    12     9
+    9     8    21    22     9
+    9     8    21    23     9
+   13     8    21    12     9
+   13     8    21    22     9
+   13     8    21    23     9
+   10     8    21    12     9
+   10     8    21    22     9
+   10     8    21    23     9
+    9     8    10    11     9
+   13     8    10    11     9
+   21     8    10    11     9
+   21    12    17    20     9
+   21    12    17    18     9
+   21    12    17    19     9
+    5    12    17    20     9
+    5    12    17    18     9
+    5    12    17    19     9
+    1    12    17    20     9
+    1    12    17    18     9
+    1    12    17    19     9
+   17    12    21    22     9
+   17    12    21    23     9
+   17    12    21     8     9
+    5    12    21    22     9
+    5    12    21    23     9
+    5    12    21     8     9
+    1    12    21    22     9
+    1    12    21    23     9
+    1    12    21     8     9
+
